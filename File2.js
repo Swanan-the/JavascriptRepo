@@ -1,1 +1,1 @@
-console.log("Hi Mag")
+console.log("Hi Mag");
