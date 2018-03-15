@@ -1,0 +1,21 @@
+<!doctype html>
+
+<html ng-app="simpleApp">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	
+	<body>
+		 
+		 <div ng-controller="simpleController">
+			 
+			 <select name="" id="" ng-change="deleteOption()" ng-model="selected_option" ng-options="value.name for value in values">
+				<option value="">--Select--</option>
+			 </select>
+			 </br>
+		 </div>
+
+	</body>
+	
+</html>
