@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html ng-app="simpleApp">
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	
+	<body>
+		 <div ng-controller="simpleController" >
+			
+			<div id="formelements">
+			
+				 IE Number</br>
+				 <input type="text" ng-model="obj.ienumber" /></br></br>
+				 
+				 Name (DE)</br>
+				 <input type="text" ng-model="obj.namede" /></br></br>
+				 
+				 Name (EN)</br>
+				 <input type="text" ng-model="obj.nameen" /></br></br>
+				 
+				 Variable Name</br>
+				 <input type="text" ng-model="obj.varname" /></br></br>
+			 
+			</div>
+		 
+		 <select name="" id="" ng-change="deleteOption()" ng-model="selected_option" ng-options="value.name for value in values">
+				<option value="">--Select--</option>
+		 </select>
+		 </br></br>
+		 
+		 <button ng-click="showOnClick(obj)">Search</button>
+		 
+		 </div>
+
+	</body>
+	
+</html>
